@@ -19,7 +19,6 @@
   place-items: center;
 }
 
-/* MENU ITEM STYLING */
 
 .menuItem {
   border-radius: 15px;
@@ -48,6 +47,24 @@
 .menuItem p {
   margin-left: 20px;
 }
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menuItem {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 0.8s ease-in-out forwards;
+}
+
 
 @media only screen and (max-width: 1300px) {
   .menuList {

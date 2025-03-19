@@ -78,3 +78,21 @@ form button {
   font-size: 15px;
   cursor: pointer;
 }
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact .rightSide {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 0.8s ease-in-out forwards;
+}
+
